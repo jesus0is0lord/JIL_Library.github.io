@@ -1,50 +1,583 @@
-<!DOCTYPE html>    
-<html>    
-<head>    
-    <title>Login Form</title>    
-    <link rel="stylesheet" type="text/css" href="css\style.css">    
-</head>    
-<body>    
-    <h2>Jesus Is Lord Library Login Page</h2><br>    
-    <div class="login">    
-    <form id="login" method="get" >    
-        <label><b>User Name     
-        </b>    
-        </label>   
- 
-        <input type="text" name="Uname" id="Uname" placeholder="Username">    
-        <br><br>    
+<!DOCTYPE html>
+<html>
+<head>
+<title>JIL Cainta Library</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <label><b>Password     
-        </b>    
-        </label>    
+<style>
 
-        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
-        <br><br>    
 
-        <input type="button" onclick = "chk_login()" name="log" id="log" value="Log In Here">    
-        <br><br>    
-  
-    </form>     
-</div>    
+.accordion {
+  background-color: #8FBC8F;
+  color: #black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  opacity: 0.75;
+}
 
-<script>
-
-function chk_login()
-{
-        // Selecting the input element and get its value 
-        let chkDavalue = document.getElementById("Uname").value + document.getElementById("Pass").value;
-	
-	if (chkDavalue === "encabojonnoj") {
-		alert("Welcome Admin");
-	} else if (chkDavalue === "rogercorvera") {
-		alert("Correct Input");
-	} else {
-		alert("Wrong User Name Or Password");
-	}
+.active, .accordion:hover {
+  background-color: #006600; 
+  opacity: 0.75;
 
 }
 
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+ opacity: 0.75;
+}
+
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  background-color: #8FBC8F;
+  text-transform: uppercase;
+  color:  #F8F8FF
+}
+
+
+body {
+  background-image: url('backG001.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 12.5px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 12.5px;
+  color: blue;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+
+
+
+#myInputi {
+
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 12.5px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myULi {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myULi li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 12.5px;
+  color: blue;
+  display: block
+}
+
+#myULi li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+
+
+#myInputiBK {
+
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 12.5px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myULiBK {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myULiBK li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 12.5px;
+  color: blue;
+  display: block
+}
+
+#myULiBK li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+
+
+p {text-align: center;}
+
+</style>
+
+<body>
+
+<header>
+
+</header>
+
+<div>
+  <p style="font-size:50px; color:white;" ><b>Jesus Is Lord Church Cainta Library</b></p>
+  </div>
+<hr>
+
+
+<button class="accordion"><b>About This Web Page</b></button>
+<div class="panel">
+
+
+
+</div>
+<hr>
+</div>
+
+<button class="accordion"><b>Mission</b></button>
+<div class="panel">
+
+<p></p>
+<div style="margin-left:5px;">
+  <iframe src="https://docs.google.com/document/d/e/2PACX-1vSXpvLLHzDDAOghTmrCciPJaDRyqZH1or_wncW3wbJMdgCVh645ciQwUHTQCZpayg/pub?embedded=true" width="100%" height="485" title="Iframe Example2"></iframe>
+<p></p>
+
+</div>
+
+</div>
+
+<button class="accordion"><b>Vision</b></button>
+<div class="panel">
+
+<p></p>
+<div style="margin-left:5px;">
+  <iframe src="https://docs.google.com/document/d/e/2PACX-1vRSR2xDxPJKkSR1ZrlbjbikjGDoApKWM8zwB6gDQbINCHWG16nitvuWoe1aqXmF9w/pub?embedded=true" width="100%" height="485" title="Iframe Example3"></iframe>
+<p></p>
+
+</div>
+
+</div>
+
+<button class="accordion"><b>Core Values</b></button>
+<div class="panel">
+
+<p></p>
+<div style="margin-left:5px;">
+  <iframe src="https://docs.google.com/document/d/e/2PACX-1vS3BpWfo_GkkqC4MWwaUIuSZHIahQvlPpYWM9kWWw9t9g-L_L9mrhJRrKwQVmRJxg/pub?embedded=true" width="100%" height="485" title="Iframe Example4"></iframe>
+<p></p>
+
+</div>
+
+</div>
+
+<button class="accordion"><b>Declaration of the JIL Church Worldwide Distinctives</b></button>
+<div class="panel">
+
+<p></p>
+<div style="margin-left:5px;">
+  <iframe src="https://docs.google.com/document/d/e/2PACX-1vQlO7OGIUshm2byVg7BTXbuMK40zrnmhVdz7agC9_c1pHLgJpKjRTIqxP-pEDaZfQ/pub?embedded=true" width="100%" height="485" title="Iframe Example5"></iframe>
+<p></p>
+
+</div>
+
+</div>
+
+<button class="accordion"><b>Declaration of Principles and Values</b></button>
+<div class="panel">
+
+<p></p>
+<div style="margin-left:5px;">
+  <iframe src="https://docs.google.com/document/d/e/2PACX-1vRfDHceOy0-kaCYLAk3jSo_W1ss4kkavumnJp8cJeA6IV1wXwBYHVgWZ7D9mKJK3Q/pub?embedded=true" width="100%" height="485" title="Iframe Example6"></iframe>
+<p></p>
+
+</div>
+
+</div>
+
+<button class="accordion"><b>Declaration of Faith</b></button>
+<div class="panel">
+
+<p></p>
+<div style="margin-left:5px;">
+  <iframe src="https://docs.google.com/document/d/e/2PACX-1vQ-pbRtOAToeE7TnUWCYdMya0zdDOobDBsfgQzb2mwXKC4niNoDMLjrFQe1VHcnzw/pub?embedded=true" width="100%" height="485" title="Iframe Example7"></iframe>
+<p></p>
+
+</div>
+
+</div>
+
+
+<hr>
+<button class="accordion"><b>Jesus Is Lord Church Teaching</b></button>
+<div class="panel">
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Jesus Is Lord Church Teaching" title="Type in a teaching">
+<ul id="myUL">
+
+<li><a href="" target="_blank"> To BE Filled By Next Topic </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vSomiO9qyMRYTQ8FB5FF4PZxXs1eJipvkqObmjWcmBIIFPDA2LyWAuOr91Q2B0CHg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Justification </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vTd8LH2vb1PhxYB1cTncwbQZq5pXw5MIB2YgSeeD_NjvePWC5HrkjIWqpMxomPY6Q/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Heart Of Thanks Giving</a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vTrO6uPdcHQ_8qDwHdBsE0EHo3PyJ4O_N5opivyUL_c0NbWsBA12TdojTL1GQPnWA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> A Life Of Impact </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vQ22qMhsHdhE4Rvt40xRrIgBtW0Qmt-p21KkdUklcdlQID6Cr5ivBXpXJraf8tzbQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Baptism Of The Holy Spirit </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vRyLEZ--vhz8JL_za5NXz_0HnHRZ79MSokPsLAFeRprP29qRKP2uxM0b7_zYIKyGQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Be Filled </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vQuG_jDMQw4xKoeklJd1dAKkbMynA0BNafmieJ3cSK_mmNcCSXxp2OMTiTVDUhTrg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Devine Healing </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vTMlBHN8jj16Z4PG-KAhQTqyCGE80L0oeDNmQFFaSqRz8eJ_SMapWaO0qIr0vCfVA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> DOCTOR-DOCTOR I AM SICK - JESUS THE GREAT PHYSICIAN </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vTpOHKrIhfGLG-KWnwSpZrIVFuSEGFhHPXSjJtmKe-BOu34I7AzcM8vUK0iM7D-FA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Establish Gods Kingdom On Earth </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vQS5Kc2TE-y2aE9Lk702ItxsLlq14yV5US19964hO3n1JnZ5Py71u7-WA_EZxX2UA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Faith News </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vRi3jmaNiEHcehQDRTnbryUvtsLjdPLeKjOPyZ17Kn6VWAj3RTctgYUpscOfz_GKw/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> FALL OF MAN - "PLAN OF REDEMPTION " </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vQ8_uvQAjCkPuIs_bHfEB8ViC1LbdadgcmUCDNswGNZpNbBX6v8r_VykH45lTMfOg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Fruit and Gifts of the Holy Spirit </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vTVo3kF1hEd5bC8Y1yaZX5BRrej5VweuqXEBrdHqYqxjU13NdO3MrxAuIFqDHqVeg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> God Given Comforts </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vR7yzbFq2BNGx-IVR2dB34PnaVr2bVjw50VvEaR6nriWIVHfz2VQooX8-GGnfUmxA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> I LOVE MY CHURCH </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vRrv92oYkotTM01Lh1mpKS9N1EBwQJ4ee8vBmGe4w6KgAgRH7KSnfaLzttjvF3DYQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Jesus Is Lord Over My Finances </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vRj2avWXRP9fMf5e7D5GocN5X68CtQIhDfeM6AeiuCYgYxGcrp_B_DoKunHgwRexg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Jesus Is Lord Over My Victories </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vQh25MULY94w-83PlGd9GBI4Q2qFlQkSmWRMPeVsndVtXQ--qRPt_jtM-wIgBC0cQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> KINGDOM DOMINION </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vS6TVeYFQhYJACWA9vpZs4noQely0TYgIgoKxDBv09iu36P6WeHDLEhaKpieMHOMw/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Declaration Of Faith </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vT57mXSVOmIcgSWRlrtBCV8BpcJBHE-pXN106P1U67WaDGclceC-d-Y2_Yc3PJLlg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> LET THERE BE JOY </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vT9KfysOjDJkj0CrCtHBZuq6OAJtDdrc3kgx8-BloQCu4nVUBASBX8c-AQJh8Q5YA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Lets Go Fishing </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vQ_VQSDXq2mMMOVKojP7i2K_c5LNaA7EB4nSX2JPndHmWP_hCw2zCfg62tsvxmUVw/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> LEVEL UP - "Revised" </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vQD6P5liRWIBHRwpKvkpgmCrjpfGqJ63hkZJlXLUueynJ63dVUSJRUI2gPsghoK_Q/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> LORDSHIP OF JESUS CHRIST </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vQZIyvsVr3XgIJUK0LhWg-wInIFl5PdqW4v9p0rLnUgz-Y1K8vcNEN8LBV6clLK7A/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Jesus Is Lord Church History </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vSPAtt_8fQFrt2b_OZrlgIjAgKPHrGeFnA-1pEvtz1Ye6hW7NMxeclYAPhV-b8Yzw/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Plan Of Redemption </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vSY_iC3lRKw4gbg-92dK4Wsqz-YA-ELb1CN0kEa4zF6MAfYjAYng8PopAR-Wju2zA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Jesus Ir Lord Over My Battles </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vSzyy9btavPcr0L78ev3EVNVKD7nRkkBd_XZnOWFW5tbIhfIk233hOQwfM197Zjow/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Are You On A Diet - "Revised" </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vS3A7J7SY3y5MXrCLklKGdIlY5c12YGBANgtoyqCB__xz1JJKdbMN4Cc-blXi-Q0w/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Recognize Your Riches in Jesus </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vTphIQD_cOHNF83DlLir1aSFtuvxZjMAniLc1MambZX_EsRrRr0rgS968EpEiDBFw/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Repentance And Acceptance </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vQVVKiawXPB1_NpVJGMM9RSwmHhEc3ZfpEsCYFkx3xcFVlIc6rKGbddFST6p-DQ7Q/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> SECOND COMING OF CHRIST </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vSTo-U6H-xXPrvjmPCTVSYq6aIW4Adv-rBAaoqJdVX-nHrjUwITYsSjyKqCpBDNMg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> SPIRITUAL DISCIPLINES </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vTF6EhplBNB3yHP77aXfQiu8VFXmiy78_8jNYlkxQmKWl1d6YkYAHkTDhzBVDRLig/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> The ETERNAL GODHEAD </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vQHVqNhLZkL7CCwyfJ28zGxLzpMUZlUfdOkr1mhcQwMHsSndsysa62rRjKRoWpsOA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> The Holy Scriptures </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vQDhWVfnIDk7Fj2p_XeNUrCSsgYXeNkCEqEPAvQnJwgxo2zAvXPtW5vLVAaHx4ncQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> The Ordinances </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vQKzWwJN9D1tur5XvEguXtY24-0OwPoAokOuY9gT_2SHBgX6vNOsJvhjU9gO9FPjg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> TITHES OFFERINGS </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vQKcy47AsQABaOxAUEvrl9GXvnS5nLCGbCB_9B7nJbuL0DbkgvEjjOt2LBxjOEb9g/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Transforming The Nation </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vSQcky5vrlRvp91u1e2x4Z0fLG9yO9ABo5oo3epLsGNvLlW4__p4MF1nM-x41BARA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> Under Cover Part 2</a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vREFpXChjRcq32HIb9CgzMTF0hgetyPBIAdWjR2D4Epz4jsm8WX7Pi8a1Tk9RHWqA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> UNLICALL </a></li>
+<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vQShOohAPBHBB1R3R1Go84BnpEwcLoSJw3GDt-GXrIEsqR5B4YkBL3k1dM_AJfyeA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" target="_blank"> YES I DO </a></li>
+
+</ul>
+</div>
+
+
+<button class="accordion"><b>Download Jesus Is Lord Church Teaching</b></button>
+<div class="panel">
+
+<input type="text" id="myInputi" onkeyup="myFunc()" placeholder="Search for names.." title="Type in a sample">
+<ul id="myULi">
+
+<li><a href="" target="_blank"> To BE Filled By Next Topic </a></li>
+<li><a href="https://drive.google.com/file/d/1TpBjIafsGzVwbKJ_TS8cls03Jw1W19Yk/view?usp=sharing" download target="_blank">Download ----> Justification </a></li>
+<li><a href="https://drive.google.com/file/d/1DCBBlA68dtzaMFLtznPalDEI0Kir70wv/view?usp=sharing" download target="_blank">Download ---->  Heart Of Thanks Giving</a></li>
+<li><a href="https://drive.google.com/file/d/1A9UNXCJqK0H8eShxeCYgd5V52dQn3Ckc/view?usp=sharing" download target="_blank">Download ---->  A Life Of Impact </a></li>
+<li><a href="https://drive.google.com/file/d/1tt6OS-WF3BFoFw9AiXVztTwafpU1C_ol/view?usp=sharing" download target="_blank">Download ---->  Baptism Of The Holy Spirit </a></li>
+<li><a href="https://drive.google.com/file/d/1kGDy6OrQbWgypmz_6NeRnF2wjkBxyuwE/view?usp=sharing" download target="_blank">Download ---->  Be Filled </a></li>
+<li><a href="https://drive.google.com/file/d/1aF7ky-rb0dComBRMm3eL9NUTtNw501q2/view?usp=sharing" download target="_blank">Download ---->  Devine Healing </a></li>
+<li><a href="https://drive.google.com/file/d/1Tykq3hbkcviGdjDKAZsv1C2Er3_2HxrC/view?usp=sharing" download target="_blank">Download ---->  DOCTOR-DOCTOR I AM SICK - JESUS THE GREAT PHYSICIAN </a></li>
+<li><a href="https://drive.google.com/file/d/15tVrSgYOmxYbNDYl7EzT1t3WFxkbAW8T/view?usp=sharing" download target="_blank">Download ---->  Establish Gods Kingdom On Earth </a></li>
+<li><a href="https://drive.google.com/file/d/1s0z58HW_UB4dfRwH9BpWSDuHqu7nQV2e/view?usp=sharing" download target="_blank">Download ---->  Faith News </a></li>
+<li><a href="https://drive.google.com/file/d/1NuaOc_H9U1-ZSCxxpuYgdesnePysRRwR/view?usp=sharing" download target="_blank">Download ---->  FALL OF MAN - "PLAN OF REDEMPTION " </a></li>
+<li><a href="https://drive.google.com/file/d/1ABXdu2vZo3B1J_5Aki7LACjOK3uqs1bo/view?usp=sharing" download target="_blank">Download ---->  Fruit and Gifts of the Holy Spirit </a></li>
+<li><a href="https://drive.google.com/file/d/1XY-g4LZttXf0kn0c3FIzOkNHqRtawg_i/view?usp=sharing" download target="_blank">Download ---->  God Given Comforts </a></li>
+<li><a href="https://drive.google.com/file/d/1vMStFHXZcYrqlj6YyRD6AKN2B_VOGV_Y/view?usp=sharing" download target="_blank">Download ---->  I LOVE MY CHURCH </a></li>
+<li><a href="https://drive.google.com/file/d/1Huu-1rJJjUMOhvEaR4yK8WQrx5wWm24r/view?usp=sharing" download target="_blank">Download ---->  Jesus Is Lord Over My Finances </a></li>
+<li><a href="https://drive.google.com/file/d/1FQWr8ORTvyR9xZx2LEN8XahKEjSOI-77/view?usp=sharing" download target="_blank">Download ---->  Jesus Is Lord Over My Victories </a></li>
+<li><a href="https://drive.google.com/file/d/1pFoSeh7yphRgzE0MOfr4M7UlzWcczg3b/view?usp=sharing" download target="_blank">Download ---->  KINGDOM DOMINION </a></li>
+<li><a href="https://drive.google.com/file/d/1B4DXCWYpQTKQfuVhS4ifrQ-cSpX_GfzL/view?usp=sharing" download target="_blank">Download ---->  Declaration Of Faith </a></li>
+<li><a href="https://drive.google.com/file/d/1zV1IQuEhErkxnlj9s-mACgFoINMV_vuH/view?usp=sharing" download target="_blank">Download ---->  LET THERE BE JOY </a></li>
+<li><a href="https://drive.google.com/file/d/1H4vPaAyjj4asZKWS-9OrLNO05xlwLlQh/view?usp=sharing" download target="_blank">Download ---->  Lets Go Fishing </a></li>
+<li><a href="https://drive.google.com/file/d/14m9_EQqvE_3f-VMt2dFAJGKvtLLrMNuE/view?usp=sharing" download target="_blank">Download ---->  LEVEL UP - "Revised" </a></li>
+<li><a href="https://drive.google.com/file/d/1cphutuYSe8ako-psi2AssNazeIgM3Kvy/view?usp=sharing" download target="_blank">Download ---->  LORDSHIP OF JESUS CHRIST </a></li>
+<li><a href="https://drive.google.com/file/d/1_VMDKUz0n1P7jXh6GxFMP2QO4zm6klry/view?usp=sharing" download target="_blank">Download ---->  Jesus Is Lord Church History </a></li>
+<li><a href="https://drive.google.com/file/d/1IuxhRzMIr5zaLJ_0iVlJ1p05fFMNQi3t/view?usp=sharing" download target="_blank">Download ---->  Plan Of Redemption </a></li>
+<li><a href="https://drive.google.com/file/d/1DcYIUai8NEmmrTf10vNV8imuuO9YB9ZS/view?usp=sharing" download target="_blank">Download ---->  Jesus Ir Lord Over My Battles </a></li>
+<li><a href="https://drive.google.com/file/d/1RWibFB7UfrMrpKDLmboS7P7V3A74U9o_/view?usp=sharing" download target="_blank">Download ---->  Are You On A Diet - "Revised" </a></li>
+<li><a href="https://drive.google.com/file/d/1718s-CoFebfNqeBMC4q7fR20yM5YoWsx/view?usp=sharing" download target="_blank">Download ---->  Recognize Your Riches in Jesus </a></li>
+<li><a href="https://drive.google.com/file/d/1WYzWRLIGPBe4KORHRKuhEtkcT6JjQ9Bj/view?usp=sharing" download target="_blank">Download ---->  Repentance And Acceptance </a></li>
+<li><a href="https://drive.google.com/file/d/1FB7Ixaq7eOibe-TZtQUoBcvz3yXTZLDh/view?usp=sharing" download target="_blank">Download ---->  SECOND COMING OF CHRIST </a></li>
+<li><a href="https://drive.google.com/file/d/1uXZAXElvK6P_7K9fkaQ3dEl5Csj8pxjT/view?usp=sharing" download target="_blank">Download ---->  SPIRITUAL DISCIPLINES </a></li>
+<li><a href="https://drive.google.com/file/d/1ruIM--7yJf4xU1CBR0ZBL7fKPhqRAfpt/view?usp=sharing" download target="_blank">Download ---->  The ETERNAL GODHEAD </a></li>
+<li><a href="https://drive.google.com/file/d/12k-tfm-SG8xKc4AyWuHP-PdJWJZpmpBd/view?usp=sharing" download target="_blank">Download ---->  The Holy Scriptures </a></li>
+<li><a href="https://drive.google.com/file/d/1Dvj8RMT3w-7Jo1ncm3mtkgXDdzmSKj_3/view?usp=sharing" download target="_blank">Download ---->  The Ordinances </a></li>
+<li><a href="https://drive.google.com/file/d/1rQE6Y-icVvL4BFtEJ6xyjXBRGJCJism_/view?usp=sharing" download target="_blank">Download ---->  TITHES OFFERINGS </a></li>
+<li><a href="https://drive.google.com/file/d/1cdoh25PK4j6Ewr_cC3j2_2xQ4tD8tzIg/view?usp=sharing" download target="_blank">Download ---->  Transforming The Nation </a></li>
+<li><a href="https://drive.google.com/file/d/1SDMEq19fn_zE6tDC5aRxCdU0-xh1rAHr/view?usp=sharing" download target="_blank">Download ---->  Under Cover Part 2</a></li>
+<li><a href="https://drive.google.com/file/d/1_soV4KuWM5Q4FyruHfBHaxTPvunEUQ7J/view?usp=sharing" download target="_blank">Download ---->  UNLICALL </a></li>
+<li><a href="https://drive.google.com/file/d/1pAJnS-yALAu86EnKeCeBXmuFL2TcKcWz/view?usp=sharing" download target="_blank">Download ---->  YES I DO </a></li>
+
+</ul>
+</div>
+<hr>
+
+
+<button class="accordion"><b>E-Book Listing</b></button>
+<div class="panel">
+
+<input type="text" id="myInputiBK" onkeyup="myFuncBK()" placeholder="Search for E-Book Title" title="Type in a book">
+<ul id="myULiBK">
+
+<li><a href="https://drive.google.com/file/d/1do8NsFGjDA5SZeVKDFMaFGQBo8Vh--vN/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1do8NsFGjDA5SZeVKDFMaFGQBo8Vh--vN/view?usp=sharing','binta1','width=600,height=400')">3 Things Successful People Do</a></li>
+<li><a href="https://drive.google.com/file/d/17r8FJlD25MIoAOU5GHFDwxSPi42WWofX/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/17r8FJlD25MIoAOU5GHFDwxSPi42WWofX/view?usp=sharing','binta2','width=600,height=400')" >24 Jesus' Final Hours - John Maxwell</a></li>
+<li><a href="https://drive.google.com/file/d/1ffBK0upaBwKJX4IREpRjCkrp45LfkeMZ/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1ffBK0upaBwKJX4IREpRjCkrp45LfkeMZ/view?usp=sharing','binta4','width=600,height=400')" >25 Ways to Win with People</a></li>
+<li><a href="https://drive.google.com/file/d/1mCcPo0_RPqQ8ifOUfNG7zgxAyxXEBf7M/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1mCcPo0_RPqQ8ifOUfNG7zgxAyxXEBf7M/view?usp=sharing','binta5','width=600,height=400')" >A Leader's Heart_ 365-Day Devotional Journal</a></li>
+<li><a href="https://drive.google.com/file/d/1nZhDyf1zH_Oy1NMcjT5B-PWjsStfCtzY/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1nZhDyf1zH_Oy1NMcjT5B-PWjsStfCtzY/view?usp=sharing','binta6','width=600,height=400')" >Attitude 101</a></li>
+<li><a href="https://drive.google.com/file/d/1BYPFJZUcYnttgLweYI0a_aF1AedJXECd/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1BYPFJZUcYnttgLweYI0a_aF1AedJXECd/view?usp=sharing','binta7','width=600,height=400')" >Be a People Person_ Effective Leadership Through Effective Relationships</a></li>
+<li><a href="https://drive.google.com/file/d/1i1XTm78fD-5L-mcAqUzqZlLz8xoHqBg1/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1i1XTm78fD-5L-mcAqUzqZlLz8xoHqBg1/view?usp=sharing','binta8','width=600,height=400')" >Be All You Can Be_ A Challenge to Stretch Your God-Given Potential</a></li>
+<li><a href="https://drive.google.com/file/d/1ExkYeRJRD-8LdW6QiKxu4G0sZCIucehF/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1ExkYeRJRD-8LdW6QiKxu4G0sZCIucehF/view?usp=sharing','binta9','width=600,height=400')" >Becoming a Person of Influence_ How to Positively Impact the Lives of Others</a></li>
+<li><a href="https://drive.google.com/file/d/13VblVCWsWmILcgYXXGhCH2ktB9aBDwnB/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/13VblVCWsWmILcgYXXGhCH2ktB9aBDwnB/view?usp=sharing','binta0','width=600,height=400')" >Dare to dream, then do it what - John Maxwell</a></li>
+<li><a href="https://drive.google.com/file/d/1OSJQGxITFc1VChHZk4yDimUSCCpBNdQ8/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1OSJQGxITFc1VChHZk4yDimUSCCpBNdQ8/view?usp=sharing','bintb1','width=600,height=400')" >Developing The Leader Within You 2.0 Workbook</a></li>
+<li><a href="https://drive.google.com/file/d/1ubLgd4SxvPpea5s376jTQ8gxzL5_pFU0/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1ubLgd4SxvPpea5s376jTQ8gxzL5_pFU0/view?usp=sharing','bintb2','width=600,height=400')" >Developing the Leader Within You 2.0</a></li>
+<li><a href="https://drive.google.com/file/d/1kEsu_eALkn8HShaYjQzhLgLcEe8FKujv/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1kEsu_eALkn8HShaYjQzhLgLcEe8FKujv/view?usp=sharing','bintb3','width=600,height=400')" >Developing the Leader Within You</a></li>
+<li><a href="https://drive.google.com/file/d/1Tp5ymPujUrBPDSCgUB-dZHVGuNiSSK9s/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1Tp5ymPujUrBPDSCgUB-dZHVGuNiSSK9s/view?usp=sharing','bintb4','width=600,height=400')" >Developing the Leaders Around You</a></li>
+<li><a href="https://drive.google.com/file/d/1mb5lEbUnracRB0iRnyMnQuKxPeY7mmDE/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1mb5lEbUnracRB0iRnyMnQuKxPeY7mmDE/view?usp=sharing','bintb5','width=600,height=400')" >Equipping 101_ What Every Leader Needs to Know</a></li>
+<li><a href="https://drive.google.com/file/d/1p5LVWrg5AmYD0PNjULqXv2qzbH2aSLWg/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1p5LVWrg5AmYD0PNjULqXv2qzbH2aSLWg/view?usp=sharing','bintb6','width=600,height=400')" >Ethics 101</a></li>
+<li><a href="https://drive.google.com/file/d/1Fv8kbEGsjp5pYoHflx_-PvTH-JD9XSpr/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1Fv8kbEGsjp5pYoHflx_-PvTH-JD9XSpr/view?usp=sharing','bintb7','width=600,height=400')" >Everyone Communicates, Few Connect</a></li>
+<li><a href="https://drive.google.com/file/d/1szY6ytMZY7jq36QuKkqRas5e3I4t7Ikn/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1szY6ytMZY7jq36QuKkqRas5e3I4t7Ikn/view?usp=sharing','bintb8','width=600,height=400')" >Failing Forward_ How to Make the Most of Your Mistakes</a></li>
+<li><a href="https://drive.google.com/file/d/1qxMwEsSQRPAPUTGmH9O4Aeo5e01_R9KO/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1qxMwEsSQRPAPUTGmH9O4Aeo5e01_R9KO/view?usp=sharing','bintb8','width=600,height=400')" >Good Leaders Ask Great Questions_ Your Foundation for Successful Leadership</a></li>
+<li><a href="https://drive.google.com/file/d/1dH2VO0QnARhCnjz92WkYf0dMIkDYIHHw/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1dH2VO0QnARhCnjz92WkYf0dMIkDYIHHw/view?usp=sharing','bintb0','width=600,height=400')" >Home Run_ Learn God's Game Plan for Life and Leadership</a></li>
+<li><a href="https://drive.google.com/file/d/1DEV3m3FXSV536vTaoNCaji2yGDvv4sfl/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1DEV3m3FXSV536vTaoNCaji2yGDvv4sfl/view?usp=sharing','bintc1','width=600,height=400')" >How High Will You Climb__ Determine Your Success by Cultivating the Right Attitude</a></li>
+<li><a href="https://drive.google.com/file/d/1dedoVONaYE_ib9stJuwRRU7NMxoLGyho/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1dedoVONaYE_ib9stJuwRRU7NMxoLGyho/view?usp=sharing','bintc2','width=600,height=400')" >How Successful People Grow_ 15 Ways to Get Ahead in Life</a></li>
+<li><a href="https://drive.google.com/file/d/19p6WqDh-vVzz6IW5Gqc1xhMf8_GTJydh/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/19p6WqDh-vVzz6IW5Gqc1xhMf8_GTJydh/view?usp=sharing','bintc3','width=600,height=400')" >How Successful People Lead_ Taking Your Influence to the Next Level</a></li>
+<li><a href="https://drive.google.com/file/d/1dS5nH7_ThJwcSRdgi7RX1urYIakNMjma/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1dS5nH7_ThJwcSRdgi7RX1urYIakNMjma/view?usp=sharing','bintc4','width=600,height=400')" >How Successful People Think_ Change Your Thinking, Change Your Life</a></li>
+<li><a href="https://drive.google.com/file/d/17-1P7fHujB9PuFYoC9lZPl5-u311LeVp/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/17-1P7fHujB9PuFYoC9lZPl5-u311LeVp/view?usp=sharing','bintc5','width=600,height=400')" >How to Influence People</a></li>
+<li><a href="https://drive.google.com/file/d/17jrvetLsp92PVh78uhzSP-Zm9B9j6yLn/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/17jrvetLsp92PVh78uhzSP-Zm9B9j6yLn/view?usp=sharing','bintc6','width=600,height=400')" >How To Lead When Your Boss Can't (or Won't) by John Maxwell</a></li>
+<li><a href="https://drive.google.com/file/d/180SbOr45qq6vkXckFp8k-xbcy_H3J0Xe/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/180SbOr45qq6vkXckFp8k-xbcy_H3J0Xe/view?usp=sharing','bintc7','width=600,height=400')" >Intentional Living_ Choosing a Life That Matters</a></li>
+<li><a href="https://drive.google.com/file/d/1XO7N9kq0hS3G1stBB_wu_qN8JZaf2gAM/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1XO7N9kq0hS3G1stBB_wu_qN8JZaf2gAM/view?usp=sharing','bintc8','width=600,height=400')" >Jesus's Birth_ When Christ was born (The Jesus Diary Book 1) - John Maxwell</a></li>
+<li><a href="https://drive.google.com/file/d/1Qss1kjkU0QRJ17GEKIW1iPjvycXM32wS/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1Qss1kjkU0QRJ17GEKIW1iPjvycXM32wS/view?usp=sharing','bintc9','width=600,height=400')" >John C. Maxwell's Quotes_ 450 Inspirational and Motivational Quotes by John C. Maxwell</a></li>
+<li><a href="https://drive.google.com/file/d/1IRmpkMB-XsKVnWDzUCd_XuALZZCMxmER/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1IRmpkMB-XsKVnWDzUCd_XuALZZCMxmER/view?usp=sharing','bintc0','width=600,height=400')" >JumpStart Your Leadership_ A 90-Day Improvement Plan</a></li>
+<li><a href="https://drive.google.com/file/d/1sz0-v0AjUZaBZzcNv4RE7WcRnd2_sHtE/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1sz0-v0AjUZaBZzcNv4RE7WcRnd2_sHtE/view?usp=sharing','bintd1','width=600,height=400')" >JumpStart Your Thinking_ A 90-Day Improvement Plan</a></li>
+<li><a href="https://drive.google.com/file/d/1bMojJGUIsd8dN9COAB1rB1OkK0JbJcdd/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1bMojJGUIsd8dN9COAB1rB1OkK0JbJcdd/view?usp=sharing','bintd2','width=600,height=400')" >Leadershift</a></li>
+<li><a href="https://drive.google.com/file/d/1qbcTFwJnG8QUhAU44WMSMyemQrn20T9e/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1qbcTFwJnG8QUhAU44WMSMyemQrn20T9e/view?usp=sharing','bintd3','width=600,height=400')" >Leadership 101_ What Every Leader Needs to Know</a></li>
+<li><a href="https://drive.google.com/file/d/1nOorh403zc2wE5Tp1PvlGrWwje162G_X/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1nOorh403zc2wE5Tp1PvlGrWwje162G_X/view?usp=sharing','bintd4','width=600,height=400')" >Leadership Gold_ Lessons I've Learned from a Lifetime of Leading</a></li>
+<li><a href="https://drive.google.com/file/d/1s2nhXXa2i__rlaEwiDddeKWkNtv7KkT1/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1s2nhXXa2i__rlaEwiDddeKWkNtv7KkT1/view?usp=sharing','bintd5','width=600,height=400')" >Leadership Promises for Every Day</a></li>
+<li><a href="https://drive.google.com/file/d/1MhtWC4vCDmooUXH8Uay6XforGasqwFP7/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1MhtWC4vCDmooUXH8Uay6XforGasqwFP7/view?usp=sharing','bintd6','width=600,height=400')" >Learning from the Giants_ Life and Leadership Lessons from the Bible (Giants of the Bible)</a></li>
+<li><a href="https://drive.google.com/file/d/1PlE2KvVt4Qy6Xd5TcFS2y1lao3ta1E16/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1PlE2KvVt4Qy6Xd5TcFS2y1lao3ta1E16/view?usp=sharing','bintd7','width=600,height=400')" >Make Today Count_ The Secret of Your Success Is Determined by Your Daily Agenda</a></li>
+<li><a href="https://drive.google.com/file/d/1MpeN4VEcGqAxUFVCY30Jlw-XB1ckLxyc/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1MpeN4VEcGqAxUFVCY30Jlw-XB1ckLxyc/view?usp=sharing','bintd8','width=600,height=400')" >Mentoring 101</a></li>
+<li><a href="https://drive.google.com/file/d/1WRRN-GBlZNH94VtNXpbjNCWnLKmO_Mt-/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1WRRN-GBlZNH94VtNXpbjNCWnLKmO_Mt-/view?usp=sharing','bintd9','width=600,height=400')" >Motivated to Succeed_ Inspirational Selections from John C. Maxwell</a></li>
+<li><a href="https://drive.google.com/file/d/1GHpYt_L9UU2GMQpsBiYTHciENCeH_YMF/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1GHpYt_L9UU2GMQpsBiYTHciENCeH_YMF/view?usp=sharing','bintd0','width=600,height=400')" >No Limits</a></li>
+<li><a href="https://drive.google.com/file/d/1-yByrBS9n_-apidmvvG4IVb3DKWT37-j/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1-yByrBS9n_-apidmvvG4IVb3DKWT37-j/view?usp=sharing','binte1','width=600,height=400')" >Put Your Dream to the Test</a></li>
+<li><a href="https://drive.google.com/file/d/1k-Srx_x6FXqMx9Sf9IsrLe5Krh4RYHw9/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1k-Srx_x6FXqMx9Sf9IsrLe5Krh4RYHw9/view?usp=sharing','binte2','width=600,height=400')" >Relationships 101</a></li>
+<li><a href="https://drive.google.com/file/d/1im5g_L-AhgbWQwB4HN90DkTZA8OMFDXJ/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1im5g_L-AhgbWQwB4HN90DkTZA8OMFDXJ/view?usp=sharing','binte3','width=600,height=400')" >Running with the Giants</a></li>
+<li><a href="https://drive.google.com/file/d/1VqDTTntH30yDVco0oeVwKgxDAs2njxNN/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1VqDTTntH30yDVco0oeVwKgxDAs2njxNN/view?usp=sharing','binte4','width=600,height=400')" >Self-Improvement 101_ What Every Leader Needs to Know</a></li>
+<li><a href="https://drive.google.com/file/d/1ItrBkuBBOwv7jnSuIjXz44rU5XAaBhKJ/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1ItrBkuBBOwv7jnSuIjXz44rU5XAaBhKJ/view?usp=sharing','binte5','width=600,height=400')" >Sometimes You Win, Sometimes You Learn_ Life's Greatest Lessons Are Gained From Our Losses</a></li>
+<li><a href="https://drive.google.com/file/d/16ZH_D14zJXC9bxGVkqG8ISAhKbd8oYfT/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/16ZH_D14zJXC9bxGVkqG8ISAhKbd8oYfT/view?usp=sharing','binte6','width=600,height=400')" >Success 101</a></li>
+<li><a href="https://drive.google.com/file/d/1i0f_YFhOtmwf6oFQQhqBl2Y7BCc1neCv/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1i0f_YFhOtmwf6oFQQhqBl2Y7BCc1neCv/view?usp=sharing','binte7','width=600,height=400')" >Talent Is Never Enough</a></li>
+<li><a href="https://drive.google.com/file/d/1Sm9Mv5aKmH5M_uEe1jIiVD_RXVBsMaWs/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1Sm9Mv5aKmH5M_uEe1jIiVD_RXVBsMaWs/view?usp=sharing','binte8','width=600,height=400')" >Teamwork 101_ What Every Leader Needs to Know</a></li>
+<li><a href="https://drive.google.com/file/d/1OmYiNVqsqCEBwnB65Y-Sr1mfeZwxIIpU/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1OmYiNVqsqCEBwnB65Y-Sr1mfeZwxIIpU/view?usp=sharing','binte9','width=600,height=400')" >The 5 Levels of Leadership_ Proven Steps to Maximize Your Potential</a></li>
+<li><a href="https://drive.google.com/file/d/1ImF-UukcuYERzLTh7fDSIypAZKNrI9xb/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1ImF-UukcuYERzLTh7fDSIypAZKNrI9xb/view?usp=sharing','binte0','width=600,height=400')" >The 15 Invaluable Laws of Growth_ Live Them and Reach Your Potential</a></li>
+<li><a href="https://drive.google.com/file/d/1x32UVyHPu0feaQzowm44ux0r3Ta9qCyI/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1x32UVyHPu0feaQzowm44ux0r3Ta9qCyI/view?usp=sharing','bintf1','width=600,height=400')" >The 17 essential qualities of a Team Player - John Maxwell</a></li>
+<li><a href="https://drive.google.com/file/d/1rxBQKj3Zdrrrub_PI7cME3DvAWODxU-E/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1rxBQKj3Zdrrrub_PI7cME3DvAWODxU-E/view?usp=sharing','bintf2','width=600,height=400')" >The 17 Indisputable Laws of Teamwork Workbook_ Embrace Them and Empower Your Team (2003)</a></li>
+<li><a href="https://drive.google.com/file/d/1h9lJl84FDn2UKduTUCwcT2Vq2OEYDVRY/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1h9lJl84FDn2UKduTUCwcT2Vq2OEYDVRY/view?usp=sharing','bintf3','width=600,height=400')" >The 17 Indisputable Laws of Teamwork_ Embrace Them and Empower Your Team</a></li>
+<li><a href="https://drive.google.com/file/d/1P9i8YsNpE7b3Gnf4RSubAgNrz79Gb38w/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1P9i8YsNpE7b3Gnf4RSubAgNrz79Gb38w/view?usp=sharing','bintf4','width=600,height=400')" >The 21 Indispensable Qualities - John Maxwell</a></li>
+<li><a href="https://drive.google.com/file/d/1nwLhMOAUK1j4YQgsP_xTHKvfFsMRE294/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1nwLhMOAUK1j4YQgsP_xTHKvfFsMRE294/view?usp=sharing','bintf5','width=600,height=400')" >The 21 Irrefutable Laws of Leadership</a></li>
+<li><a href="https://drive.google.com/file/d/1CB3wt_B6igPRPBetFhB2gnnrp8c461tv/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1CB3wt_B6igPRPBetFhB2gnnrp8c461tv/view?usp=sharing','bintf6','width=600,height=400')" >The 360ø Leader_ Developing Your Influence from Anywhere in the Organization</a></li>
+<li><a href="https://drive.google.com/file/d/1aPlXwc1kRLhkKk09oE2oMn-r_Z3Hs_6U/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1aPlXwc1kRLhkKk09oE2oMn-r_Z3Hs_6U/view?usp=sharing','bintf7','width=600,height=400')" >The Choice is Yours</a></li>
+<li><a href="https://drive.google.com/file/d/1mPg7yWPX3klRVDBwCvweFsqYoJfBXktP/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1mPg7yWPX3klRVDBwCvweFsqYoJfBXktP/view?usp=sharing','bintf8','width=600,height=400')" >The Complete 101 Collection_ Wh - John Maxwell</a></li>
+<li><a href="https://drive.google.com/file/d/1LOEMKPCIMagCWZGc89x614oHp1_rlUtc/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1LOEMKPCIMagCWZGc89x614oHp1_rlUtc/view?usp=sharing','bintf9','width=600,height=400')" >The Difference Maker_ Making Your Attitude Your Greatest Asset</a></li>
+<li><a href="https://drive.google.com/file/d/1FuISrBNyZOWdPN5CHasBXTL0a8SSQaf7/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1FuISrBNyZOWdPN5CHasBXTL0a8SSQaf7/view?usp=sharing','bintf0','width=600,height=400')" >The Jesus Diary_ The most comprehensive chronology of the events in the  life of Jesus Christ, the Son of God, ever written (The Jesus Diary - Second Edition Book 1)</a></li>
+<li><a href="https://drive.google.com/file/d/1gRRoLbQnYf9I4RMjnqUKoF6vnKovVC-S/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1gRRoLbQnYf9I4RMjnqUKoF6vnKovVC-S/view?usp=sharing','bintg1','width=600,height=400')" >The Leaders Greatest Return Workbook -John C. Maxwell</a></li>
+<li><a href="https://drive.google.com/file/d/1E2ORcIu3LvrYJJbosHROU3-SZCQ6QwBZ/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1E2ORcIu3LvrYJJbosHROU3-SZCQ6QwBZ/view?usp=sharing','bintg2','width=600,height=400')" >The Maxwell Daily Reader_ 365 Days of Insight to Develop the Leader Within You and Influence Those Around You</a></li>
+<li><a href="https://drive.google.com/file/d/1BbgV8sJz1qYJy7THQgvuJHVz-sBGb13U/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1BbgV8sJz1qYJy7THQgvuJHVz-sBGb13U/view?usp=sharing','bintg3','width=600,height=400')" >The Maxwell Leadership Bible (3rd edition)</a></li>
+<li><a href="https://drive.google.com/file/d/1TgbhnxRQc2fvQ57idKqb63fexSD2SxUK/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1TgbhnxRQc2fvQ57idKqb63fexSD2SxUK/view?usp=sharing','bintg4','width=600,height=400')" >The Maxwell Leadership Bible (revised and updated)</a></li>
+<li><a href="https://drive.google.com/file/d/12MmZ0VnQ_qW4XnzPyZYsDwHjnYJiM15l/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/12MmZ0VnQ_qW4XnzPyZYsDwHjnYJiM15l/view?usp=sharing','bintg5','width=600,height=400')" >The Power of Your Potential</a></li>
+<li><a href="https://drive.google.com/file/d/1EJmv3hfJq6mNvYevLlCj_K9duQUkDHi4/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1EJmv3hfJq6mNvYevLlCj_K9duQUkDHi4/view?usp=sharing','bintg6','width=600,height=400')" >The Right to Lead</a></li>
+<li><a href="https://drive.google.com/file/d/1c_9JCbYdmY5Nm97Rfmacw2FXmK1Mzlaj/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1c_9JCbYdmY5Nm97Rfmacw2FXmK1Mzlaj/view?usp=sharing','bintg7','width=600,height=400')" >There's No Such Thing As _Business_ Ethics</a></li>
+<li><a href="https://drive.google.com/file/d/1LW7fkb7INtNAWxx3ohyH3K58qPpHvQUn/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1LW7fkb7INtNAWxx3ohyH3K58qPpHvQUn/view?usp=sharing','bintg8','width=600,height=400')" >Think On These Things</a></li>
+<li><a href="https://drive.google.com/file/d/10KioouhZjsMJ1Mh59kI9IYclC2jivdBc/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/10KioouhZjsMJ1Mh59kI9IYclC2jivdBc/view?usp=sharing','bintg9','width=600,height=400')" >Thinking for a Change_ 11 Ways Highly Successful People Approach Life andWork</a></li>
+<li><a href="https://drive.google.com/file/d/1dIKC_4zZttyyUGxQcTUqPT6BWw5xlxZC/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1dIKC_4zZttyyUGxQcTUqPT6BWw5xlxZC/view?usp=sharing','bintg0','width=600,height=400')" >Today Matters_ 12 Daily Practices to Guarantee Tomorrows Success (Maxwell, John C.)</a></li>
+<li><a href="https://drive.google.com/file/d/1Meam0ijBkWjb7aBFkGH2CfrfLf1BvC1N/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1Meam0ijBkWjb7aBFkGH2CfrfLf1BvC1N/view?usp=sharing','binth1','width=600,height=400')" >Winning With People_ Discover the People Principles That Work for You Every Time</a></li>
+<li><a href="https://drive.google.com/file/d/1zUt29bOb9GNRdpVSv_TMUZ96afUBfprq/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1zUt29bOb9GNRdpVSv_TMUZ96afUBfprq/view?usp=sharing','binth2','width=600,height=400')" >Wisdom from Women in the Bible_ Giants of the Faith Speak into Our Lives (Giants of the Bible)</a></li>
+<li><a href="https://drive.google.com/file/d/1VWSkVtPTU-LGAtgoQ8FiaoCqRTfW3bez/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1VWSkVtPTU-LGAtgoQ8FiaoCqRTfW3bez/view?usp=sharing','binth3','width=600,height=400')" >The Shepherds Staff</a></li>
+
+<li><a href="https://drive.google.com/file/d/1ub0Qr672mwNNlIcZjdN-VpJOxgbAH_fj/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1ub0Qr672mwNNlIcZjdN-VpJOxgbAH_fj/view?usp=sharing','binth4','width=600,height=400')" > Applying the Kingdom - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/15uGbuGOU8e1wK_n8-VyDDsr3PcL8919P/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/15uGbuGOU8e1wK_n8-VyDDsr3PcL8919P/view?usp=sharing','binth5','width=600,height=400')" > Becoming A Leader - Myles Munroe </a> </li>
+<li><a href="https://drive.google.com/file/d/10P4ApmGI5bqMhAMb8Ys6wpFG59gUvZgW/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/10P4ApmGI5bqMhAMb8Ys6wpFG59gUvZgW/view?usp=sharing','binth6','width=600,height=400')" > Burden Of Freedom, The - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1LE9e0f_Iyc9G4O-a9XZfFo1W6DMlglL1/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1LE9e0f_Iyc9G4O-a9XZfFo1W6DMlglL1/view?usp=sharing','binth7','width=600,height=400')" > Daily Power and Prayer Devotion - Myles Munroe  </a></li>
+<li><a href="https://drive.google.com/file/d/1SqnF6uRC5bQoaW1X6tbWb2GFIKivwbmT/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1SqnF6uRC5bQoaW1X6tbWb2GFIKivwbmT/view?usp=sharing','binth8','width=600,height=400')" > Fatherhood Principle, The - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1KyffuIdaRtDextZk8jNIU7d6OXw0Z0Z3/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1KyffuIdaRtDextZk8jNIU7d6OXw0Z0Z3/view?usp=sharing','binth9','width=600,height=400')" > Glory Of Living, The - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1xVE3WzV-YQE-fvp2QhmQDbot1_zTIn7O/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1xVE3WzV-YQE-fvp2QhmQDbot1_zTIn7O/view?usp=sharing','binth0','width=600,height=400')" > In Charge Finding the Leader W - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1izNl0p2oF4j24jgypj87-_QsTU9FTTMn/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1izNl0p2oF4j24jgypj87-_QsTU9FTTMn/view?usp=sharing','binti1','width=600,height=400')" > In Pursuit of Purpose - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1usjdI8ZH2OL3oHwfT1X_ggxZt13JlwSn/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1usjdI8ZH2OL3oHwfT1X_ggxZt13JlwSn/view?usp=sharing','binti2','width=600,height=400')" > Keys for Change - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1XU29mqAh5L5UpU6DydziB0seLgGg47PE/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1XU29mqAh5L5UpU6DydziB0seLgGg47PE/view?usp=sharing','binti3','width=600,height=400')" > Keys for Leadership - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1IAhqBb2ryr3lETIrUG1_ByiZEGHU3SeJ/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1IAhqBb2ryr3lETIrUG1_ByiZEGHU3SeJ/view?usp=sharing','binti4','width=600,height=400')" > Keys for Living Single - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1irpBYVpn2hTRGCOWQYNBuNMqC2LtS-dJ/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1irpBYVpn2hTRGCOWQYNBuNMqC2LtS-dJ/view?usp=sharing','binti5','width=600,height=400')" > Keys for Marriage - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1NolI15R1OEtXRZY6lilkH4u3MejmRD1g/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1NolI15R1OEtXRZY6lilkH4u3MejmRD1g/view?usp=sharing','binti6','width=600,height=400')" > Keys for Men - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1dRSmR6ctx0e_l4-Jhf32CnRv69TFtnmR/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1dRSmR6ctx0e_l4-Jhf32CnRv69TFtnmR/view?usp=sharing','binti7','width=600,height=400')" > Keys for Prayer - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1kE2jyM3urKZFIyzPmcdGt_KsbJ-mwsXw/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1kE2jyM3urKZFIyzPmcdGt_KsbJ-mwsXw/view?usp=sharing','binti8','width=600,height=400')" > Kingdom Parenting - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1-pITH7KDX27V1ENapmfIqeAeF12ha-hx/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1-pITH7KDX27V1ENapmfIqeAeF12ha-hx/view?usp=sharing','binti9','width=600,height=400')" > Kingdom Principles - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1vYbFZtYHT5134NPjgDmlLrLTf1p2MCX7/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1vYbFZtYHT5134NPjgDmlLrLTf1p2MCX7/view?usp=sharing','binti0','width=600,height=400')" > Maximizing Your Potential - Myles Munroe  </a></li>
+<li><a href="https://drive.google.com/file/d/1X3YTaMfWpkb7er-uCBtxtVY3s-ByEvNt/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1X3YTaMfWpkb7er-uCBtxtVY3s-ByEvNt/view?usp=sharing','bintj1','width=600,height=400')" > Most Important Person On Earth - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1KaDrTCaMPGT0M91XrhKUZ4t5IRJflYzW/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1KaDrTCaMPGT0M91XrhKUZ4t5IRJflYzW/view?usp=sharing','bintj2','width=600,height=400')" > Most Important Person on Earth, Study Guide - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1hdXFfQGDbAhj0M1zhyotWkhOAFevSevF/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1hdXFfQGDbAhj0M1zhyotWkhOAFevSevF/view?usp=sharing','bintj3','width=600,height=400')" > Overcoming Crisis - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/186x5_v-nEIoUNodNH1oOxCOqEvXmJU6p/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/186x5_v-nEIoUNodNH1oOxCOqEvXmJU6p/view?usp=sharing','bintj4','width=600,height=400')" > Passing It On Growing Your Future - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1067073WDA6jawpK4V8wxcT0CXuYNPKZZ/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1067073WDA6jawpK4V8wxcT0CXuYNPKZZ/view?usp=sharing','bintj5','width=600,height=400')" > Power of Character in Leadership - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1CrkWzDq-Lx5Rn-ndfMotXsgFv5ze5bXE/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1CrkWzDq-Lx5Rn-ndfMotXsgFv5ze5bXE/view?usp=sharing','bintj6','width=600,height=400')" > Principles And Benefits Of Change - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1N03gBCyUkjRXPBiuY8cQG1_UgNtWHgFP/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1N03gBCyUkjRXPBiuY8cQG1_UgNtWHgFP/view?usp=sharing','bintj7','width=600,height=400')" > Principles And Power Of Vision- - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/10rSakjmMX9hqeZ2hgsmCH4PYxFAk6Xxu/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/10rSakjmMX9hqeZ2hgsmCH4PYxFAk6Xxu/view?usp=sharing','bintj8','width=600,height=400')" > Principles and Power of Vision, The - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1nDvvkcbERO1oVjwTdS5lNXCgAY6D14-k/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1nDvvkcbERO1oVjwTdS5lNXCgAY6D14-k/view?usp=sharing','bintj9','width=600,height=400')" > Purpose _ Power Of Love _ Marriage, The - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1DWCZkV7gDcoinFGpNLrTelCaFXIv-801/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1DWCZkV7gDcoinFGpNLrTelCaFXIv-801/view?usp=sharing','bintj0','width=600,height=400')" > Purpose And Power Of Authority - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1xtueAgmawMcK6wGRD-kWL609aAePsdm8/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1xtueAgmawMcK6wGRD-kWL609aAePsdm8/view?usp=sharing','bintk1','width=600,height=400')" > Purpose and Power of Praise, The - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1PKMlk1Ly4ZaDdh7a3zIrnTDMoAPvAV9Q/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1PKMlk1Ly4ZaDdh7a3zIrnTDMoAPvAV9Q/view?usp=sharing','bintk2','width=600,height=400')" > Reclaiming God_s Original Purpose - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1QUKq63ApNwXF8Y4_HUy4fdJOj5Ul3EWw/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1QUKq63ApNwXF8Y4_HUy4fdJOj5Ul3EWw/view?usp=sharing','bintk3','width=600,height=400')" > Rediscovering Kingdom Worship - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1spk0D7j7yqlrSPZn6F-oLTbn5Lo-X7ig/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1spk0D7j7yqlrSPZn6F-oLTbn5Lo-X7ig/view?usp=sharing','bintk4','width=600,height=400')" > Rediscovering the Kingdom - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/118ZsYCs0xjQ5uti8c922S433JZ-R4pn2/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/118ZsYCs0xjQ5uti8c922S433JZ-R4pn2/view?usp=sharing','bintk5','width=600,height=400')" > Releasing Your Potential - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1tiMzPfPK7QBYJI7WbwMppP4BbLweDJ5S/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1tiMzPfPK7QBYJI7WbwMppP4BbLweDJ5S/view?usp=sharing','bintk6','width=600,height=400')" > Single, Married, Separated and Life After Divorce - Myles Munroe  </a></li>
+<li><a href="https://drive.google.com/file/d/19CisarLUxNB2tiPtxSAT_Kl0TFKWxMQ8/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/19CisarLUxNB2tiPtxSAT_Kl0TFKWxMQ8/view?usp=sharing','bintk7','width=600,height=400')" > Spirit Of Leadership - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1N6zx484nWKMUMkdPrnTQxYrKWho8VlUu/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1N6zx484nWKMUMkdPrnTQxYrKWho8VlUu/view?usp=sharing','bintk8','width=600,height=400')" > Uncover Your Potential - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1o5FfDjJzEydw8R5k3TGmQqA6Y5w2W6iS/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1o5FfDjJzEydw8R5k3TGmQqA6Y5w2W6iS/view?usp=sharing','bintk9','width=600,height=400')" > Understanding The Purpose And Power of Men - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1e4W2OTh3WumhDqnycY6ORbMgetm_j35b/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1e4W2OTh3WumhDqnycY6ORbMgetm_j35b/view?usp=sharing','bintk0','width=600,height=400')" > Understanding The Purpose And Power of Prayer - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1m4ac7UO8BiIgWIHuwZIdQ1XeRDkmzrxl/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1m4ac7UO8BiIgWIHuwZIdQ1XeRDkmzrxl/view?usp=sharing','bintm1','width=600,height=400')" > Understanding The Purpose And Power of Woman - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1a3LOoSwPyAXNwYR7SwZylboXc1v-MMM5/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1a3LOoSwPyAXNwYR7SwZylboXc1v-MMM5/view?usp=sharing','bintm2','width=600,height=400')" > Understanding Your Place in God_s Kingdom - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1kBn9IBzvpzoedqU99-NXlf-a5tSNmbqA/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1kBn9IBzvpzoedqU99-NXlf-a5tSNmbqA/view?usp=sharing','bintm3','width=600,height=400')" > Understanding Your Potential - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1-yw48WEEdhmvoEXZ2YXZw-bq1ONPqwNz/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1-yw48WEEdhmvoEXZ2YXZw-bq1ONPqwNz/view?usp=sharing','bintm4','width=600,height=400')" > Unleash Your Purpose - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/11jXBJHQZ_XJKe1UgAykAynraltuSw98u/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/11jXBJHQZ_XJKe1UgAykAynraltuSw98u/view?usp=sharing','bintm5','width=600,height=400')" > Unlock Your Potential Becoming - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/1Rz1GOzAMo287qxpNIO-bvcWaLAXTVYBc/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/1Rz1GOzAMo287qxpNIO-bvcWaLAXTVYBc/view?usp=sharing','bintm6','width=600,height=400')" > Waiting and Dating - Myles Munroe </a></li>
+<li><a href="https://drive.google.com/file/d/13FyjRzGQSAo0Qk6Rvi5wQJa4hQhIzp2g/view?usp=sharing" target="_blank" onclick="window.open('https://drive.google.com/file/d/13FyjRzGQSAo0Qk6Rvi5wQJa4hQhIzp2g/view?usp=sharing','bintm7','width=600,height=400')" > Wisdom from Myles Munroe - Myles Munroe </a></li>
+
+
+</ul>
+</div>
+
+<hr>
+
+
+<script>
+
+function myFunction()
+{
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++)
+    {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1)
+        {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+
+function myFuncBK()
+{
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInputiBK");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myULiBK");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++)
+    {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1)
+        {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+
+function myFunc()
+{
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInputi");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myULi");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++)
+    {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1)
+        {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++)
+{
+  acc[i].addEventListener("click", function()
+  {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block")
+    {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
 </script>
-</body>    
-</html>     
+</body>
+</html> 
+
+
